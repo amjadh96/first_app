@@ -22,16 +22,15 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   <title>React App</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
-  <script src="https://www.google.com/recaptcha/api.js?render=6LeGWtoUAAAAAA537WwJZ6Qf2IN30sixFxZ8Az3U"></script>
-  <script>
-    grecaptcha.ready(function() {
-      grecaptcha.execute('6LeGWtoUAAAAAA537WwJZ6Qf2IN30sixFxZ8Az3U', {action: 'homepage'}).then(function(token) {
-      });
-    });
-  </script>
+  <form action="?" method="POST">
+    <div class="g-recaptcha" data-sitekey="6LeGWtoUAAAAAA537WwJZ6Qf2IN30sixFxZ8Az3U"></div>
+    <br/>
+    <input type="submit" value="Submit">
+  </form>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <!--
